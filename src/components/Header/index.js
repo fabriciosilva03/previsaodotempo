@@ -14,7 +14,7 @@ export default function Header(){
         <Ionicons
             name="cloud"
             color="#FFF"
-            size={150}
+            size={100}
         />
         <Text style={styles.temp}> 30° </Text>
 
@@ -24,26 +24,24 @@ export default function Header(){
 
 const styles = StyleSheet.create({
     header:{
-        top: -55,
-   
         width: '95%',
-        height: '65%', 
+        height: '50%', 
         alignItems: 'center',
         borderRadius: 8,
         
     },
     date:{
         color: '#FFF',
-        fontSize: 17
+        fontSize: 15
     },
     city:{
         color: '#FFF',
-        fontSize: 20,
+        fontSize: 17,
         fontWeight: 'bold',
     },
     temp:{
         color: '#FFF',
-        fontSize: 70,
+        fontSize: 50,
         fontWeight: 'bold'
     }
 });
