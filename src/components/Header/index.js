@@ -11,17 +11,17 @@ export default function Header({background, weather, icon}){
       colors={background}
       >
 
-        <Text style={styles.date}> {weather.results.date} </Text>
-        <Text style={styles.city}> {weather.results.city_name} </Text> 
+      <Text style={styles.date}> {weather.results.date} </Text>
+      <Text style={styles.city}> {weather.results.city_name} </Text> 
     
-        <Ionicons
+          <Ionicons
             name={icon.name}
             color={icon.color}
             size={100}
         />
-
+    
         <Text style={styles.temp}> {weather.results.temp}° </Text>
-
+    
       </LinearGradient>
     )  
 }

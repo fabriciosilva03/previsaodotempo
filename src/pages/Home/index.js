@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {SafeAreaView, Text, StyleSheet, FlatList} from 'react-native';
+import {SafeAreaView,View, Text, StyleSheet, FlatList} from 'react-native';
 import * as Location from 'expo-location';
 
 import Menu from '../../components/Menu';
@@ -139,6 +139,14 @@ export default function Home(){
     })();
 
   },[]);
+
+  if(loading){
+    return(
+      <View style={styles.container}>
+        <Text style={{fontSize:17, fontStyle:'italic'}}>Carregando dados...</Text>
+      </View>
+    )
+  }
 
     return(
         <SafeAreaView style={styles.container}>
